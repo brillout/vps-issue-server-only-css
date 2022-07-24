@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [
     VitePluginVue(),
     VitePluginSSR({
+      includeAssetsImportedByServer: true,
       prerender: true
     })
   ]
